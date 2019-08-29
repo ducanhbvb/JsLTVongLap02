@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inTamGiac</title>
+</head>
+<body>
+<script>
+    function intamgiac1() {
+        for ( let i=0;i<=5;i++){
+            for(let j=0;j<i;j++){
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+    }
+    function intamgiac2() {
+        for ( let i=5;i>=1;i--){
+            for(let j=0;j<i;j++){
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+    }
+    function intamgiac3() {
+        for ( let i=5;i>=1;i--){
+            for(let z=i-1;z>0;z--){
+                document.write("&nbsp&nbsp");
+            }
+            for(let j=5;j>=i;j--){
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+    }
+    function intamgiac4(){
+        for ( let i=5;i>=1;i--){
+            for(let z=5;z>i;z--){
+                document.write("&nbsp&nbsp");
+            }
+            for(let j=0;j<i;j++){
+                document.write("*");
+            }
+            document.write("<br/>");
+    }}
+    intamgiac1();
+    document.write("<br/>");
+    intamgiac2();
+    document.write("<br/>");
+    intamgiac3();
+    document.write("<br/>");
+    intamgiac4();
+</script>
+</body>
+</html>

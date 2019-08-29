@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let tong=parseInt(prompt("tong so fibonaci can in ra:="));
+    let fibonacci1 = 0;
+    let fibonacci2 = 1;
+    let tg = 1;
+    for(let i=0;i<tong;i++){
+        document.write(" " + (i+1) + "=" + fibonacci1);
+        tg = fibonacci2;
+        fibonacci2 = fibonacci1 + fibonacci2;
+        fibonacci1 = tg;
+    }
+    document.write("end");
+</script>
+</body>
+</html>

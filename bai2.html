@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GiaiThua</title>
+</head>
+<body>
+<script>
+    function giaithua(n) {
+        for (let i = n; i >= 1; i--) {
+            factorial = factorial * i;
+        }
+    }
+    check = parseInt(prompt("input number to check:="));
+    let factorial = 1;
+        giaithua(check);
+    document.write("Resul:= "+factorial);
+</script>
+</body>
+</html>

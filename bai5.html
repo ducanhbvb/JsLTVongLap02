@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+Input Tiền Gốc(trieu):<input id="tienGoc" type="text">
+Input số tháng vay(thang):<input id="thangVay" type="text">
+Input lãi suât hàng tháng(%):<input id="laiHangT" type="text">
+Input thời gian đáo hạn(thang/lan):<input id="tgdh" type="text">
+<button type="button" onclick="interest()">click Me!</button>
+<script>
+    function interest() {
+        let tienGoc=parseInt(document.getElementById("tienGoc").value);
+        let thangVay=parseInt(document.getElementById("thangVay").value);
+        let laiHangT=parseInt(document.getElementById("laiHangT").value);
+        let tgdh=parseInt(document.getElementById("tgdh").value);
+        let slDaoHan=Math.round((thangVay/tgdh));
+        let sum=0;
+        for (let i=0;i< slDaoHan;i++){
+            tienGoc+=tienGoc*laiHangT*tgdh/100;
+        }
+        sum=tienGoc+tienGoc*(thangVay-tgdh*slDaoHan)*laiHangT/100;
+        alert(slDaoHan);
+        document.write("so tien hien tai bao gom lai va goc la:= "+sum);
+    }
+
+</script>
+</body>
+</html>
