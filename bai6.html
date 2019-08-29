@@ -6,7 +6,34 @@
 </head>
 <body>
 <script>
-    
+    function inTraiTim() {
+        let size=parseInt(prompt("Nhập trái tim của bạn to ntn >5:= "));
+        let a=b=Math.round(size/4);
+        let x=y=Math.round(3*size/4);
+        let nua=Math.round(size/4);
+        for(let i=0;i<nua;i++){
+            for(let j=0;j<size;j++) {
+                if(((j>=a) && (j<=b))||((j>=x) && (j<=y))){
+                    document.write("*");
+                }else{document.write("&nbsp&nbsp");}
+            }
+            a--;
+            b++;
+            x--;
+            y++;
+            document.write("<br/>")
+        }
+        for(let i=0;i<size;i++) {
+            for (let j=0;j<i;j++){
+                document.write("&nbsp&nbsp");
+            }
+            for(let j=i;j<(size-i);j++){
+                document.write("*");
+            }
+            document.write("<br/>");
+        }
+    }
+    inTraiTim();
 </script>
 </body>
 </html>
